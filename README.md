@@ -24,7 +24,7 @@ Search for your favourite movies.
 Details page giving an overview of the movie.
 
 ### Watchlist
-Save your favourite movies to watchlist. Keeps the movies saved even after closing the app.
+Save your favourite movies to watchlist.\nKeeps the movies saved even after closing the app.
 
 ## Known Issues
 No way to refresh the home page. Need to restart the app.
