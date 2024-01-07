@@ -1,4 +1,4 @@
-<img src="screenshots/logo_bg_landscape.png" width=512>
+<img align="centre" src="screenshots/logo_bg_landscape.png" width=512>
 
 # Assignment 3 - CinéSync
 CinéSync is a simple movie listing app built with Flutter and TMDB api.
