@@ -28,7 +28,8 @@ Save your favourite movies to watchlist. Keeps the movies saved even after closi
 
 ## Known Issues
 No way to refresh the home page. Need to restart the app.<br>
-Performance can be improved.
+Performance can be improved.<br>
+-- I added upcoming section instead of top rated as asked in the assignment as an error, I will change it later. --
 
 ## References
 Design inspired by Hotstar and video series provided in Notion.
