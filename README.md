@@ -32,3 +32,5 @@ Performance can be improved.
 
 ## References
 Design inspired by Hotstar and video series provided in Notion.
+
+# -By Ravi Shah
