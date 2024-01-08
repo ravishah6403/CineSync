@@ -15,7 +15,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   late Future<List<Movie>> trendingMovies;
   late Future<List<Movie>> nowPlayingMovies;
-  late Future<List<Movie>> upcomingMovies;
+  late Future<List<Movie>> topRatedMovies;
 
   void initDb() async {
     await DatabaseRepository.instance.database;
@@ -27,7 +27,7 @@ class _HomePageState extends State<HomePage> {
     super.initState();
     trendingMovies = API().getTrendingMovies();
     nowPlayingMovies = API().getNowPlayingMovies();
-    upcomingMovies = API().getUpcomingMovies();
+    topRatedMovies = API().getTopRatedMovies();
   }
 
   @override
@@ -75,7 +75,7 @@ class _HomePageState extends State<HomePage> {
           const Padding(
             padding: EdgeInsets.symmetric(horizontal: 10),
             child: Text(
-              'Upcoming',
+              'Top Rated',
               style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
           ),
@@ -85,7 +85,7 @@ class _HomePageState extends State<HomePage> {
           SizedBox(
             height: 220,
             child: FutureBuilder(
-              future: upcomingMovies,
+              future: topRatedMovies,
               builder: (context, snapshot) {
                 if (snapshot.hasError) {
                   return const Center(

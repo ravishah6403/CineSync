@@ -12,8 +12,8 @@ class API {
       'https://api.themoviedb.org/3/trending/movie/day?api_key=$apiKey';
   static const _nowPlayingURL =
       'https://api.themoviedb.org/3/movie/now_playing?api_key=$apiKey';
-  static const _upcomingURL =
-      'https://api.themoviedb.org/3/movie/upcoming?api_key=$apiKey';
+  static const _topRatedURL =
+      'https://api.themoviedb.org/3/movie/top_rated?api_key=$apiKey';
 
   Future<List<Movie>> getTrendingMovies() async {
     final response = await http.get(Uri.parse(_trendingURL));
@@ -37,8 +37,8 @@ class API {
     }
   }
 
-  Future<List<Movie>> getUpcomingMovies() async {
-    final response = await http.get(Uri.parse(_upcomingURL));
+  Future<List<Movie>> getTopRatedMovies() async {
+    final response = await http.get(Uri.parse(_topRatedURL));
 
     if (response.statusCode == 200) {
       final data = jsonDecode(response.body)['results'] as List;
