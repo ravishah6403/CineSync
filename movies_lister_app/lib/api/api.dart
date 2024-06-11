@@ -4,7 +4,8 @@ import 'package:http/http.dart' as http;
 import 'package:movies_lister_app/api/movie_model.dart';
 
 class API {
-  static const apiKey = 'e1516d63f89a0879482d5a107ecc66b1';
+  static const apiKey =
+      String.fromEnvironment('API_KEY', defaultValue: 'API_KEY_ERROR');
   static const imgPath = 'https://image.tmdb.org/t/p/w500';
   static const imgPathHQ = 'https://image.tmdb.org/t/p/original';
 
