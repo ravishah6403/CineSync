@@ -1,6 +1,6 @@
 <img align="centre" src="screenshots/logo_bg_landscape.png" width=512>
 
-# Assignment 3 - CinéSync
+# CinéSync
 CinéSync is a simple movie listing app built with Flutter and TMDB api.
 
 ## Screenshots
@@ -30,10 +30,9 @@ Save your favourite movies to watchlist. Keeps the movies saved even after closi
 [Demo](https://drive.google.com/file/d/1-Zhkpu52zPPJ6D83xF9WouI5N4nU_Ft7/view?usp=drive_link)
 
 ## Known Issues
-No way to refresh the home page. Need to restart the app.<br>
 Performance can be improved.
 
 ## References
-Design inspired by Hotstar and video series provided in Notion.
+Design inspired by Hotstar.
 
 # -By Ravi Shah
